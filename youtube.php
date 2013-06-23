@@ -5,7 +5,7 @@ $youtube = explode("v=", $youtube);
 $youtube = explode("&", $youtube[1]);
 
 $video_id = $youtube[0];
-$url = "http://www.youtube-mp3.org/api/itemInfo/?video_id=$video_id&ac=www";
+$url = "http://www.youtube-mp3.org/a/itemInfo/?video_id=$video_id&ac=www";
 $data = file_get_contents($url);
 $data = explode("info = ", $data);
 $data = explode(";", $data[1]);
